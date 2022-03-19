@@ -197,7 +197,7 @@
     /*=============================================================SKILLS PAGE===================================================*/
     
     .skills {
-        padding: 4rem 0 5rem;
+        padding: 2rem 0 5rem;
         row-gap: 1rem;
         display: flex;
         flex-direction: column;
@@ -282,7 +282,7 @@
     /*================================================================CONTACT PAGE====================================================*/
     
     .contact {
-        padding: 6rem 0 0rem 0em;
+        padding: 3rem 0 0rem 0em;
         row-gap: 2rem;
     }
     
@@ -310,15 +310,15 @@
         border-radius: 8px;
     }
     
-    form textarea {
-        height: 15rem;
+    .form textarea {
+        height: 15em;
         margin-top: 3%;
         border-radius: 7px;
         border: 2.25px solid black;
     }
     
     .form button {
-        margin-top: 3%;
+        margin-top: 2%;
         width: 9rem;
         padding: 10px;
         border-radius: 7px;
@@ -331,7 +331,7 @@
     /*==============================================================FOOTER====================================================*/
     
     .footer {
-        margin-top: 3em;
+        margin-top: 7em;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
