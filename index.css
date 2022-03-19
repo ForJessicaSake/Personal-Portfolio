@@ -199,6 +199,9 @@
     .skills {
         padding: 4rem 0 5rem;
         row-gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     
     .skills h1 {
