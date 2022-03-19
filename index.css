@@ -40,7 +40,8 @@ header {
     font-family: Calibri;
     font-weight: bold;
     font-size: 0.9em;
-    gap: 4em
+    gap: 10em;
+    width: 50%;
 }
 
 .heading ul li {
