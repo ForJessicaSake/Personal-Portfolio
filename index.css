@@ -51,7 +51,7 @@
     /*============================================================ HOME PAGE==============================================*/
     
     .home {
-        font-size: 4em;
+        font-size: 3.5em;
         margin-left: 5%;
         display: flex;
         flex-wrap: wrap;
@@ -73,7 +73,7 @@
     }
     
     .home button {
-        margin-top: 4rem;
+        margin-top: 5rem;
         width: 15%;
         padding: 10px;
         border-radius: 6px;
