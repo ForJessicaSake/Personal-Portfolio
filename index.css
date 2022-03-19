@@ -9,22 +9,14 @@
     html {
         scroll-behavior: smooth;
     }
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
     
-    @media screen and (min-width: 968px) {
-         :root {
-            --big-font-size: 3.5rem;
-            --h2-font-size: 2rem;
-            --normal-font-size: 1rem;
-            --smaller-font-size: .875rem;
+    @media screen and (max-width: 700px) {
+        .row,
+        .navbar {
+            flex-direction: column;
         }
     }
-
-
-
-
-
-
-
     /*===================================================NAVIGATION BAR==============================================*/
     
     header {
@@ -68,17 +60,10 @@
         text-decoration: underline #3a5292;
         text-decoration-thickness: 2.5px;
     }
-
-
-
-
-
-
-
     /*============================================================ HOME PAGE==============================================*/
     
     .home {
-        font-size: 3.3em;
+        font-size: 3em;
         margin-left: 5%;
         display: flex;
         flex-wrap: wrap;
@@ -120,11 +105,6 @@
     .socials i {
         color: black;
     }
-
-
-
-
-
     /*=========================================================ABOUT PAGE==================================================*/
     
     #about {
@@ -170,12 +150,6 @@
         line-height: 1.6;
         margin-left: 100px;
     }
-
-
-
-
-
-
     /*===============================================================WORK PAGE====================================================*/
     
     .work {
@@ -220,13 +194,6 @@
     .workimages img:hover {
         transform: scale(1.1);
     }
-
-
-
-
-
-
-
     /*=============================================================SKILLS PAGE===================================================*/
     
     .skills {
@@ -309,11 +276,6 @@
         border-radius: 1rem;
         height: 27rem;
     }
-
-
-
-
-
     /*================================================================CONTACT PAGE====================================================*/
     
     .contact {
@@ -363,10 +325,6 @@
         font-weight: bold;
         align-self: flex-end;
     }
-
-
-
-
     /*==============================================================FOOTER====================================================*/
     
     .footer {
