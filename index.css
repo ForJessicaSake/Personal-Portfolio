@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+main {
     overflow-x: hidden;
 }
 
@@ -158,7 +158,6 @@ header {
 .work {
     padding: 6rem 0 5rem;
     row-gap: 2rem;
-    transition: 1.1s;
 }
 
 .work h1 {
@@ -390,7 +389,18 @@ header {
     }
 }
 
-@media only screen and (max-width: 1500px) and (min-width: 481px) {
+@media only screen and (max-width: 900px) and (min-width: 481px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 901px) {
     html,
     body {
         width: 100%;
