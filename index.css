@@ -141,10 +141,13 @@ header {
 /*=========================================================ABOUT PAGE==================================================*/
 
 #about {
-    display: flex;
-    flex-direction: column;
     padding: 4rem 0 4rem;
     row-gap: 1rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
 }
 
 #about h1 {
@@ -178,10 +181,10 @@ header {
 }
 
 .textcontainer {
-    width: 50%;
     line-height: 1.88;
     margin-left: 10rem;
     color: #4a4e4f;
+    width: 50%;
 }
 
 
