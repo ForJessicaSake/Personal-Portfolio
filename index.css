@@ -305,7 +305,7 @@
  }
  
  .form button {
-     margin-top: 2%;
+     margin-top: 3%;
      width: 8rem;
      padding: 10px;
      border-radius: 7px;
@@ -438,8 +438,7 @@
      }
      .form {
          margin-top: 2.5em;
-         text-align: center;
-         width: 800px;
+         width: 900px;
      }
  }
  
