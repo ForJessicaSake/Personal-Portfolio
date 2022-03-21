@@ -195,15 +195,16 @@
      font-family: Calibri;
      font-size: 35px;
      font-weight: bold;
-     text-align: center;
      margin-top: 0.3%;
+     display: inherit;
+     justify-content: center;
  }
  
  .professionalskills {
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-     margin-top: 1em
+     margin-top: 1em;
  }
  
  .ptext {
@@ -355,25 +356,30 @@
  @media only screen and (max-width: 480px) and (min-width: 320px) {
      html,
      body {
-         width: 150%;
+         width: 140%;
          margin: 0;
          padding: 0;
          overflow-x: hidden;
      }
+     .skillheader {
+         margin-right: 2em;
+         justify-content: center;
+     }
      .ptext {
          text-align: center;
          font-size: 1.5em;
-         width: 700px;
+         width: 650px;
      }
      .box {
-         width: 700px;
+         width: 645px;
      }
      .img {
-         width: 800px;
+         width: 675px;
      }
      .form {
+         margin-top: 2.5em;
          text-align: center;
-         width: 950px;
+         width: 800px;
      }
      .about {
          display: flex;
@@ -386,8 +392,9 @@
          text-align: center;
      }
      .abouttext {
-         width: 700px;
+         width: 675px;
          margin-top: 1em;
+         margin-left: 1em;
      }
  }
  
@@ -399,6 +406,41 @@
          padding: 0;
          overflow-x: hidden;
      }
+     .about {
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         margin-top: 2em
+     }
+     .aboutsubtitle {
+         margin-top: 1em;
+         text-align: center;
+     }
+     .abouttext {
+         width: 675px;
+         margin-top: 1em;
+         margin-left: 1em;
+     }
+     .skillheader {
+         margin-right: 2em;
+         justify-content: center;
+     }
+     .ptext {
+         text-align: center;
+         font-size: 1.5em;
+         width: 640px;
+     }
+     .box {
+         width: 645px;
+     }
+     .img {
+         width: 675px;
+     }
+     .form {
+         margin-top: 2.5em;
+         text-align: center;
+         width: 800px;
+     }
  }
  
  @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -408,5 +450,39 @@
          margin: 0;
          padding: 0;
          overflow-x: hidden;
+     }
+     .about {
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         margin-top: 2em
+     }
+     .aboutsubtitle {
+         margin-top: 1em;
+         text-align: center;
+     }
+     .abouttext {
+         width: 675px;
+         margin-top: 1em;
+         margin-left: 1em;
+     }
+     .skillheader {
+         margin-right: 1.2em;
+         justify-content: center;
+     }
+     .ptext {
+         text-align: center;
+         font-size: 1.5em;
+         width: 715px;
+     }
+     .box {
+         width: 730px;
+     }
+     .img {
+         width: 755px;
+     }
+     .form {
+         margin-top: 2.5em;
+         width: 900px;
      }
  }
