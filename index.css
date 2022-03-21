@@ -226,7 +226,7 @@
  .box {
      background-color: #fffffd;
      margin-top: 1.3em;
-     width: 30em;
+     width: 32em;
      display: flex;
      align-items: center;
      flex-wrap: wrap;
@@ -373,7 +373,7 @@
      }
      .form {
          text-align: center;
-         width: 900px;
+         width: 950px;
      }
      .about {
          display: flex;
