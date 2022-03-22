@@ -7,17 +7,10 @@
  html {
      scroll-behavior: smooth;
  }
- 
-
-
-/*=======================================================GOOGLE FONTS==========================================================*/
+ /*=======================================================GOOGLE FONTS==========================================================*/
  
  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto+Mono:wght@100&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
-
-
-
-
-/*===================================================NAVIGATION BAR==============================================*/
+ /*===================================================NAVIGATION BAR==============================================*/
  
  header {
      border-bottom: 0.01px solid rgb(245, 239, 239);
@@ -56,10 +49,6 @@
      text-decoration: underline #3a5292;
      text-decoration-thickness: 2.5px;
  }
-
-
-
-
  /*============================================================ HOME PAGE==============================================*/
  
  .home {
@@ -98,19 +87,15 @@
  }
  
  .socials {
-     margin-left: 5%;
      display: flex;
-     justify-content: space-between;
+     margin-left: 5%;
      width: 120px;
+     justify-content: space-between;
  }
  
  .socials i {
      color: black;
  }
-
-
-
-
  /*=========================================================ABOUT PAGE==================================================*/
  
  #about {
@@ -147,11 +132,6 @@
      color: #4a4e4f;
      width: 700px
  }
-
-
-
-
-
  /*===============================================================WORK PAGE====================================================*/
  
  .work {
@@ -169,6 +149,7 @@
  }
  
  .workimages {
+     cursor: pointer;
      margin-top: 1.5em;
      --gap: 22px;
      --num-cols: 3;
@@ -180,7 +161,6 @@
      grid-auto-rows: var(--row-height);
      gap: var(--gap);
      box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
-     cursor: pointer;
  }
  
  .workimages img {
@@ -199,11 +179,6 @@
      transform: scale(1.1);
      scroll-behavior: smooth;
  }
-
-
-
-
-
  /*=============================================================SKILLS PAGE===================================================*/
  
  .skills {
@@ -290,12 +265,6 @@
      border-radius: 1rem;
      height: 25rem;
  }
-
-
-
-
-
-
  /*================================================================CONTACT PAGE====================================================*/
  
  .contact {
@@ -347,11 +316,6 @@
      align-self: flex-end;
      cursor: pointer;
  }
-
-
-
-
-
  /*==============================================================FOOTER====================================================*/
  
  .footer {
@@ -388,11 +352,6 @@
      text-align: center;
      font-family: Calibri;
  }
-
-
-
-
-
  /*=======================================================MEDIAQUERIES==========================================================*/
  
  @media only screen and (max-width: 480px) and (min-width: 320px) {
