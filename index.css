@@ -85,13 +85,14 @@
      background-color: #0377d6;
      border: 0px solid #2a3d70;
      color: white;
+     cursor: pointer;
  }
  
  .socials {
-     display: flex;
-     width: 8%;
      margin-left: 5%;
+     display: flex;
      justify-content: space-between;
+     width: 120px;
  }
  
  .socials i {
@@ -161,6 +162,7 @@
      grid-auto-rows: var(--row-height);
      gap: var(--gap);
      box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
+     cursor: pointer;
  }
  
  .workimages img {
@@ -314,6 +316,7 @@
      border: 0px solid #2a3d70;
      font-weight: bold;
      align-self: flex-end;
+     cursor: pointer;
  }
  /*==============================================================FOOTER====================================================*/
  
