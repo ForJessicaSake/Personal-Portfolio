@@ -340,7 +340,7 @@
      display: flex;
      justify-content: center;
      margin-top: 2rem;
-     gap: 5em
+     gap: 5em;
  }
  
  .socialmedia i {
