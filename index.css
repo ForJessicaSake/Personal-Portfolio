@@ -53,7 +53,7 @@ nav ul li a {
 
  nav a.active,
  nav a:hover {
-    background:#3a5292;
+    background:white;
     transition: .5s;
     color: black;
     text-decoration: underline #3a5292;
@@ -398,12 +398,12 @@ nav ul li a {
     }
     nav ul {
         position: fixed;
-        width: 55%;
-        height: 100vh;
+        width: 70%;
+        height: 80vh;
         top: 80px;
         left: -100%;
         text-align: center;
-        background-color:transparent;
+        background-color:#9fa9c2;
         transition: all .5s;
 
     }
@@ -427,6 +427,31 @@ nav ul li a {
     .content {
         height: calc(100vh-80px);
     }
+
+    .home{
+        z-index: -1;
+        position: relative;
+    }
+
+    .socials{
+        z-index: -1;
+        position: relative; 
+    }
+      .about{
+         position: relative;
+          z-index: -1;
+    }
+     .work{
+         position: relative;
+          z-index: -1;
+     }
+     .skills{
+        position: relative;
+        z-index: -1;
+     }
+     .contact{
+       z-index: -1;
+     }
      .skillheader {
          margin-right: 2em;
          justify-content: center;
@@ -447,20 +472,25 @@ nav ul li a {
          text-align: center;
          width: 800px;
      }
+       #about{
+        z-index: -1;
+    }
      .about {
          display: flex;
          flex-direction: column;
          align-content: center;
-         margin-top: 2em
+         margin-top: 2em;
      }
      .aboutsubtitle {
          margin-top: 1em;
          text-align: center;
+
      }
      .abouttext {
          width: 675px;
          margin-top: 1em;
          margin-left: 1em;
+
      }
  }
  
@@ -482,13 +512,13 @@ nav ul li a {
     }
     nav ul {
         position: fixed;
-        width: 60%;
-        height: 50vh;
+        width: 72%;
+        height: 40vh;
         top: 80px;
         left: -100%;
         transition: all .5s;
         text-align: center;
-        background-color:transparent;
+        background-color:#9fa9c2;
         transition: all .5s;
 
     }
@@ -511,6 +541,16 @@ nav ul li a {
     }
     .content {
         height: calc(100vh-80px);
+
+    }
+     .home{
+        z-index: -1;
+        position: relative;
+    }
+
+    .socials{
+        z-index: -1;
+        position: relative; 
     }
      .about {
          display: flex;
@@ -522,6 +562,10 @@ nav ul li a {
          margin-top: 1em;
          text-align: center;
      }
+     .about{
+         position: relative;
+          z-index: -1;
+    }
      .abouttext {
          width: 675px;
          margin-top: 1em;
@@ -541,6 +585,17 @@ nav ul li a {
      }
      .img {
          width: 675px;
+     }
+     .work{
+         position: relative;
+          z-index: -1;
+     }
+     .skills{
+        position: relative;
+        z-index: -1;
+     }
+     .contact{
+       z-index: -1;
      }
      .form {
          margin-top: 2.5em;
