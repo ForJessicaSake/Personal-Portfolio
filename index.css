@@ -12,43 +12,67 @@
  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto+Mono:wght@100&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
  /*===================================================NAVIGATION BAR==============================================*/
  
- header {
-     border-bottom: 0.01px solid rgb(245, 239, 239);
-     align-content: center;
-     padding: 1em;
- }
- 
- .heading {
-     display: flex;
-     font-family: 'Mukta', sans-serif;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     font-size: 0.95em;
-     cursor: pointer;
-     margin-left: 4%;
- }
- 
- .heading ul {
-     display: flex;
-     font-weight: bold;
-     font-size: 0.9em;
-     gap: 5em;
- }
- 
- .heading ul li {
-     display: inline-block;
-     list-style: none;
- }
- 
- .link a {
-     text-decoration: none;
-     color: black;
- }
- 
- .link a:hover {
-     text-decoration: underline #3a5292;
-     text-decoration-thickness: 2.5px;
- }
+
+nav {
+    height: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+label.logo {
+    font-size: 20px;
+    padding: 0px 75px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 60px;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+ nav a.active,
+ nav a:hover {
+    background:#3a5292;
+    transition: .5s;
+    color: black;
+    text-decoration: underline #3a5292;
+    text-decoration-thickness: 2.5px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
  /*============================================================ HOME PAGE==============================================*/
  
  .home {
@@ -362,6 +386,47 @@
          padding: 0;
          overflow-x: hidden;
      }
+
+      label.logo {
+        font-size: 30px;
+        padding-left: 30px;   
+        font-family: 'Inconsolata', monospace;
+    }
+    .checkbtn {
+        display: block;
+
+    }
+    nav ul {
+        position: fixed;
+        width: 55%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background-color:transparent;
+        transition: all .5s;
+
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        color: black;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .content {
+        height: calc(100vh-80px);
+    }
      .skillheader {
          margin-right: 2em;
          justify-content: center;
@@ -407,6 +472,46 @@
          padding: 0;
          overflow-x: hidden;
      }
+      label.logo {
+        font-size: 30px;
+        padding-left: 50px;   
+        font-family: 'Inconsolata', monospace;
+    }
+    .checkbtn {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 60%;
+        height: 50vh;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+        background-color:transparent;
+        transition: all .5s;
+
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        color: black;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .content {
+        height: calc(100vh-80px);
+    }
      .about {
          display: flex;
          flex-direction: column;
@@ -451,6 +556,17 @@
          padding: 0;
          overflow-x: hidden;
      }
+
+     label.logo {
+        font-size: 30px;
+        padding-left: 50px;   
+        font-family: 'Inconsolata', monospace;
+
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+
      .about {
          display: flex;
          flex-direction: column;
