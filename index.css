@@ -405,6 +405,7 @@ nav ul li a {
         text-align: center;
         background-color:#9fa9c2;
         transition: all .5s;
+        z-index: 2;
 
     }
     nav ul li {
@@ -428,30 +429,6 @@ nav ul li a {
         height: calc(100vh-80px);
     }
 
-    .home{
-        z-index: -1;
-        position: relative;
-    }
-
-    .socials{
-        z-index: -1;
-        position: relative; 
-    }
-      .about{
-         position: relative;
-          z-index: -1;
-    }
-     .work{
-         position: relative;
-          z-index: -1;
-     }
-     .skills{
-        position: relative;
-        z-index: -1;
-     }
-     .contact{
-       z-index: -1;
-     }
      .skillheader {
          margin-right: 2em;
          justify-content: center;
@@ -520,6 +497,7 @@ nav ul li a {
         text-align: center;
         background-color:#9fa9c2;
         transition: all .5s;
+        z-index: 2;
 
     }
     nav ul li {
@@ -543,15 +521,8 @@ nav ul li a {
         height: calc(100vh-80px);
 
     }
-     .home{
-        z-index: -1;
-        position: relative;
-    }
 
-    .socials{
-        z-index: -1;
-        position: relative; 
-    }
+   
      .about {
          display: flex;
          flex-direction: column;
@@ -562,10 +533,7 @@ nav ul li a {
          margin-top: 1em;
          text-align: center;
      }
-     .about{
-         position: relative;
-          z-index: -1;
-    }
+  
      .abouttext {
          width: 675px;
          margin-top: 1em;
@@ -586,17 +554,7 @@ nav ul li a {
      .img {
          width: 675px;
      }
-     .work{
-         position: relative;
-          z-index: -1;
-     }
-     .skills{
-        position: relative;
-        z-index: -1;
-     }
-     .contact{
-       z-index: -1;
-     }
+    
      .form {
          margin-top: 2.5em;
          width: 900px;
@@ -633,9 +591,11 @@ nav ul li a {
          text-align: center;
      }
      .abouttext {
-         width: 675px;
+         width: 700px;
          margin-top: 1em;
          margin-left: 1em;
+         text-align: justify;
+         font-size: 27px;
      }
      .skillheader {
          margin-right: 1.2em;
@@ -643,17 +603,17 @@ nav ul li a {
      }
      .ptext {
          text-align: center;
-         font-size: 1.5em;
-         width: 715px;
+         font-size: 1.7em;
+         width: 900px;
      }
      .box {
-         width: 730px;
+         width: 900px;
      }
      .img {
-         width: 755px;
+         width: 900px;
      }
      .form {
          margin-top: 2.5em;
-         width: 900px;
+         width: 1200px;
      }
  }
