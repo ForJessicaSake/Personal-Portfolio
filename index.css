@@ -437,45 +437,10 @@
          padding: 0;
          overflow-x: hidden;
      }
-     label.logo {
-         font-size: 30px;
-         padding-left: 50px;
-         font-family: 'Inconsolata', monospace;
-     }
-     .checkbtn {
-         display: block;
-     }
-     nav ul {
-         position: fixed;
-         width: 72%;
-         height: 40vh;
-         top: 80px;
-         left: -100%;
-         transition: all .5s;
-         text-align: center;
-         background-color: #9fa9c2;
-         transition: all .5s;
-         z-index: 2;
-     }
-     nav ul li {
-         display: block;
-         margin: 50px 0;
-         line-height: 30px;
-         color: black;
-     }
-     nav ul li a {
-         font-size: 20px;
-     }
      a:hover,
      a.active {
          background: none;
          color: white;
-     }
-     #check:checked~ul {
-         left: 0;
-     }
-     .content {
-         height: calc(100vh-80px);
      }
      .about {
          display: flex;
