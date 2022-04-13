@@ -12,71 +12,67 @@
  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto+Mono:wght@100&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
  /*===================================================NAVIGATION BAR==============================================*/
  
-
-nav {
-    height: 60px;
-    width: 100%;
-    align-items: center;
-}
-
-label.logo {
-    font-size: 20px;
-    padding: 0px 75px;
-    font-weight: bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 60px;
-
-}
-
-nav ul {
-    float: right;
-    margin-right: 10px;
-    font-family: 'Inconsolata', monospace;
-    margin-left: 20px;
-
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 60px;
-    margin: 0 5px;
-
-}
-
-nav ul li a {
-    color: black;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
+ nav {
+     height: 60px;
+     width: 100%;
+     align-items: center;
+ }
+ 
+ label.logo {
+     font-size: 20px;
+     padding: 0px 75px;
+     font-weight: bold;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     line-height: 60px;
+ }
+ 
+ nav ul {
+     float: right;
+     margin-right: 10px;
+     font-family: 'Inconsolata', monospace;
+     margin-left: 20px;
+ }
+ 
+ nav ul li {
+     display: inline-block;
+     line-height: 60px;
+     margin: 0 5px;
+ }
+ 
+ nav ul li a {
+     color: black;
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-decoration: none;
+ }
+ 
  nav a.active,
  nav a:hover {
-    background:white;
-    transition: .5s;
-    color: black;
-    text-decoration: underline #3a5292;
-    text-decoration-thickness: 2.5px;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: black;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
+     background: white;
+     transition: .5s;
+     color: black;
+     text-decoration: underline #3a5292;
+     text-decoration-thickness: 2.5px;
+ }
+ 
+ .checkbtn {
+     font-size: 30px;
+     color: black;
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+ }
+ 
+ #check {
+     display: none;
+ }
  /*============================================================ HOME PAGE==============================================*/
  
  .home {
-     font-size: 3.2em;
+     font-size: 3.5em;
      margin-left: 5%;
      display: flex;
      flex-wrap: wrap;
@@ -87,11 +83,13 @@ nav ul li a {
      position: relative;
      padding: 6rem 0 5rem;
      row-gap: 2rem;
-     width: auto;
+     width: 100%;
+     line-height: 1.5;
  }
  
  .home .avartar {
-     height: 9em;
+     height: 7.5em;
+     margin-right: 8%;
  }
  
  .home span {
@@ -99,7 +97,7 @@ nav ul li a {
  }
  
  .home button {
-     margin-top: 6rem;
+     margin-top: 3rem;
      width: 9em;
      padding: 10px;
      border-radius: 6px;
@@ -187,19 +185,19 @@ nav ul li a {
      box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
  }
  
- .workimages img {
+ .workimages a img {
      transition: 2s;
      transition-delay: 0.001s;
      border-radius: 12px;
  }
  
- .workimages>img {
+ .workimages>a img {
      width: 100%;
      height: 100%;
      object-fit: cover;
  }
  
- .workimages img:hover {
+ .workimages a img:hover {
      transform: scale(1.1);
      scroll-behavior: smooth;
  }
@@ -386,49 +384,45 @@ nav ul li a {
          padding: 0;
          overflow-x: hidden;
      }
-
-      label.logo {
-        font-size: 30px;
-        padding-left: 30px;   
-        font-family: 'Inconsolata', monospace;
-    }
-    .checkbtn {
-        display: block;
-
-    }
-    nav ul {
-        position: fixed;
-        width: 70%;
-        height: 80vh;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        background-color:#9fa9c2;
-        transition: all .5s;
-        z-index: 2;
-
-    }
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        color: black;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:hover,
-    a.active {
-        background: none;
-        color: white;
-    }
-    #check:checked~ul {
-        left: 0;
-    }
-    .content {
-        height: calc(100vh-80px);
-    }
-
+     label.logo {
+         font-size: 30px;
+         padding-left: 30px;
+         font-family: 'Inconsolata', monospace;
+     }
+     .checkbtn {
+         display: block;
+     }
+     nav ul {
+         position: fixed;
+         width: 70%;
+         height: 80vh;
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         background-color: #9fa9c2;
+         transition: all .5s;
+         z-index: 2;
+     }
+     nav ul li {
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+         color: black;
+     }
+     nav ul li a {
+         font-size: 20px;
+     }
+     a:hover,
+     a.active {
+         background: none;
+         color: white;
+     }
+     #check:checked~ul {
+         left: 0;
+     }
+     .content {
+         height: calc(100vh-80px);
+     }
      .skillheader {
          margin-right: 2em;
          justify-content: center;
@@ -449,9 +443,9 @@ nav ul li a {
          text-align: center;
          width: 800px;
      }
-       #about{
-        z-index: -1;
-    }
+     #about {
+         z-index: -1;
+     }
      .about {
          display: flex;
          flex-direction: column;
@@ -461,13 +455,11 @@ nav ul li a {
      .aboutsubtitle {
          margin-top: 1em;
          text-align: center;
-
      }
      .abouttext {
          width: 675px;
          margin-top: 1em;
          margin-left: 1em;
-
      }
  }
  
@@ -479,50 +471,46 @@ nav ul li a {
          padding: 0;
          overflow-x: hidden;
      }
-      label.logo {
-        font-size: 30px;
-        padding-left: 50px;   
-        font-family: 'Inconsolata', monospace;
-    }
-    .checkbtn {
-        display: block;
-    }
-    nav ul {
-        position: fixed;
-        width: 72%;
-        height: 40vh;
-        top: 80px;
-        left: -100%;
-        transition: all .5s;
-        text-align: center;
-        background-color:#9fa9c2;
-        transition: all .5s;
-        z-index: 2;
-
-    }
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        color: black;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:hover,
-    a.active {
-        background: none;
-        color: white;
-    }
-    #check:checked~ul {
-        left: 0;
-    }
-    .content {
-        height: calc(100vh-80px);
-
-    }
-
-   
+     label.logo {
+         font-size: 30px;
+         padding-left: 50px;
+         font-family: 'Inconsolata', monospace;
+     }
+     .checkbtn {
+         display: block;
+     }
+     nav ul {
+         position: fixed;
+         width: 72%;
+         height: 40vh;
+         top: 80px;
+         left: -100%;
+         transition: all .5s;
+         text-align: center;
+         background-color: #9fa9c2;
+         transition: all .5s;
+         z-index: 2;
+     }
+     nav ul li {
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+         color: black;
+     }
+     nav ul li a {
+         font-size: 20px;
+     }
+     a:hover,
+     a.active {
+         background: none;
+         color: white;
+     }
+     #check:checked~ul {
+         left: 0;
+     }
+     .content {
+         height: calc(100vh-80px);
+     }
      .about {
          display: flex;
          flex-direction: column;
@@ -533,7 +521,6 @@ nav ul li a {
          margin-top: 1em;
          text-align: center;
      }
-  
      .abouttext {
          width: 675px;
          margin-top: 1em;
@@ -554,7 +541,6 @@ nav ul li a {
      .img {
          width: 675px;
      }
-    
      .form {
          margin-top: 2.5em;
          width: 900px;
@@ -569,17 +555,14 @@ nav ul li a {
          padding: 0;
          overflow-x: hidden;
      }
-
      label.logo {
-        font-size: 30px;
-        padding-left: 50px;   
-        font-family: 'Inconsolata', monospace;
-
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
-
+         font-size: 30px;
+         padding-left: 50px;
+         font-family: 'Inconsolata', monospace;
+     }
+     nav ul li a {
+         font-size: 16px;
+     }
      .about {
          display: flex;
          flex-direction: column;
