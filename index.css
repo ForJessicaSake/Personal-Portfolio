@@ -384,45 +384,13 @@
          padding: 0;
          overflow-x: hidden;
      }
-     label.logo {
-         font-size: 30px;
-         padding-left: 30px;
-         font-family: 'Inconsolata', monospace;
-     }
-     .checkbtn {
-         display: block;
-     }
-     nav ul {
-         position: fixed;
-         width: 70%;
-         height: 80vh;
-         top: 80px;
-         left: -100%;
-         text-align: center;
-         background-color: #9fa9c2;
-         transition: all .5s;
-         z-index: 2;
-     }
-     nav ul li {
-         display: block;
-         margin: 50px 0;
-         line-height: 30px;
-         color: black;
-     }
-     nav ul li a {
-         font-size: 20px;
-     }
+  
      a:hover,
      a.active {
          background: none;
          color: white;
      }
-     #check:checked~ul {
-         left: 0;
-     }
-     .content {
-         height: calc(100vh-80px);
-     }
+   
      .skillheader {
          margin-right: 2em;
          justify-content: center;
@@ -443,9 +411,7 @@
          text-align: center;
          width: 800px;
      }
-     #about {
-         z-index: -1;
-     }
+    
      .about {
          display: flex;
          flex-direction: column;
