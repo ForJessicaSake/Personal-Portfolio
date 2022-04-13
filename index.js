@@ -12,7 +12,7 @@ sr.reveal('.avartar, .aboutsubtitle, .abouttext, .skillimage', { delay: 400 });
 sr.reveal('.socials', { interval: 200 });
 sr.reveal('.box, .workimages, .form', { interval: 200 });
 
-var link = document.getElementsByClassName("links");
+var link = document.getElementsByClassName("checkbtn");
 window.onclick = function(event) {
     if (event.target == link) {
         link.style.display = "none";
