@@ -15,6 +15,6 @@ sr.reveal('.box, .workimages, .form', { interval: 200 });
 var link = document.getElementsByClassName("links");
 window.onclick = function(event) {
     if (event.target == link) {
-        modal.style.display = "none";
+        link.style.display = "none";
     }
 }
