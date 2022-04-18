@@ -18,7 +18,6 @@
      width: 100%;
      align-items: center;
      position: fixed;
-     top: 2px;
      background-color: rgba(255, 255, 255, 0.8);
      z-index: 100;
      border-bottom: 1px solid #e6e6e6;
@@ -390,13 +389,11 @@
          padding: 0;
          overflow-x: hidden;
      }
-  
      a:hover,
      a.active {
          background: none;
          color: white;
      }
-   
      .skillheader {
          margin-right: 2em;
          justify-content: center;
@@ -417,7 +414,6 @@
          text-align: center;
          width: 800px;
      }
-    
      .about {
          display: flex;
          flex-direction: column;
