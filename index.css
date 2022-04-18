@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     z-index: -5;
  }
  
  html {
@@ -13,23 +14,28 @@
  /*===================================================NAVIGATION BAR==============================================*/
  
  nav {
-     height: 60px;
+     height: 56px;
      width: 100%;
      align-items: center;
+     position: fixed;
+     top: 2px;
+     background-color: rgba(255, 255, 255, 0.8);
+     z-index: 100;
+     border-bottom: 1px solid #e6e6e6;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  
  label.logo {
      font-size: 20px;
      padding: 0px 75px;
      font-weight: bold;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      line-height: 60px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  
  nav ul {
      float: right;
      margin-right: 10px;
-     font-family: 'Inconsolata', monospace;
      margin-left: 20px;
  }
  
@@ -204,7 +210,7 @@
  /*=============================================================SKILLS PAGE===================================================*/
  
  .skills {
-     padding: 2rem 0 5rem;
+     padding: 3rem 0 5rem;
      row-gap: 1rem;
      display: flex;
      flex-direction: column;
