@@ -21,26 +21,22 @@
             z-index: 5;
             border-bottom: 1px solid #e6e6e6;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: space-between;
         }
         
         label.logo {
             font-size: 20px;
-            padding: 0px 75px;
+            padding: 0px 35px;
             font-weight: bold;
             line-height: 60px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         nav ul {
-            float: right;
-            margin-right: 10px;
-            margin-left: 20px;
-        }
-        
-        nav ul li {
-            display: inline-block;
-            line-height: 60px;
-            margin: 0 5px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
         }
         
         nav ul li a {
@@ -393,6 +389,9 @@
             a.active {
                 background: none;
                 color: white;
+            }
+            nav {
+                width: 100%;
             }
             .skillheader {
                 margin-right: 2em;
