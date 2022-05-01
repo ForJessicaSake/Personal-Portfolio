@@ -1,638 +1,715 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
- 
- html {
-     scroll-behavior: smooth;
- }
- /*=======================================================GOOGLE FONTS==========================================================*/
- 
- @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto+Mono:wght@100&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
- /*===================================================NAVIGATION BAR==============================================*/
- 
- nav {
-     height: 56px;
-     width: 100%;
-     align-items: center;
-     position: fixed;
-     background-color: rgba(255, 255, 255, 0.8);
-     z-index: 5;
-     border-bottom: 1px solid #e6e6e6;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     display: flex;
-     justify-content: space-between;
- }
- 
- label.logo {
-     font-size: 20px;
-     padding: 0px 35px;
-     font-weight: bold;
-     line-height: 60px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
- 
- nav ul {
-     list-style: none;
-     display: flex;
-     flex-direction: row;
- }
- 
- nav ul li a {
-     color: black;
-     font-size: 17px;
-     padding: 7px 13px;
-     border-radius: 3px;
-     text-decoration: none;
- }
- 
- nav a.active,
- nav a:hover {
-     background: white;
-     transition: .5s;
-     color: black;
-     text-decoration: underline #3a5292;
-     text-decoration-thickness: 2.5px;
- }
- 
- .checkbtn {
-     font-size: 30px;
-     color: black;
-     float: right;
-     line-height: 80px;
-     margin-right: 40px;
-     cursor: pointer;
-     display: none;
- }
- 
- #check {
-     display: none;
- }
- /*============================================================ HOME PAGE==============================================*/
- 
- .home {
-     font-size: 3.5em;
-     margin-left: 5%;
-     display: flex;
-     flex-wrap: wrap;
-     font-family: 'Mukta', sans-serif;
-     justify-content: space-between;
-     margin-right: 10%;
-     height: 100%;
-     position: relative;
-     padding: 6rem 0 5rem;
-     row-gap: 2rem;
-     width: 100%;
-     line-height: 1.5;
- }
- 
- .home .avartar {
-     height: 7.5em;
-     margin-right: 8%;
- }
- 
- .home span {
-     color: #0377d6;
- }
- 
- .home button {
-     margin-top: 3rem;
-     width: 9em;
-     padding: 10px;
-     border-radius: 6px;
-     font-weight: bold;
-     background-color: #0377d6;
-     border: 0px solid #2a3d70;
-     color: white;
-     cursor: pointer;
- }
- 
- .socials {
-     display: flex;
-     margin-left: 5%;
-     width: 120px;
-     justify-content: space-between;
- }
- 
- .socials i {
-     color: black;
- }
- /*=========================================================ABOUT PAGE==================================================*/
- 
- #about {
-     padding: 4rem 0 4rem;
-     row-gap: 1rem;
- }
- 
- .about {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-around;
- }
- 
- #about h1 {
-     font-family: Calibri;
-     font-weight: bold;
-     text-align: center;
-     color: #0377d6;
-     margin-top: 5%;
-     font-size: 35px;
-     text-decoration: underline #0377d6;
- }
- 
- #about p {
-     font-size: 20px;
- }
- 
- .imagecontainer img {
-     height: 25em;
-     border-radius: 10px;
-     box-shadow: 0.05em 0em 0.5em 0.05em;
- }
- 
- .textcontainer {
-     line-height: 1.88;
-     font-size: 1em;
-     color: #4a4e4f;
-     width: 700px
- }
- /*===============================================================WORK PAGE====================================================*/
- 
- .work {
-     padding: 6rem 0 5rem;
-     row-gap: 2rem;
- }
- 
- .work h1 {
-     text-decoration: underline #0377d6;
-     color: #0377d6;
-     font-family: Calibri;
-     font-size: 35px;
-     font-weight: bold;
-     text-align: center;
- }
- 
- .workimages {
-     cursor: pointer;
-     margin-top: 1.5em;
-     --gap: 22px;
-     --num-cols: 3;
-     --row-height: 250px;
-     box-sizing: border-box;
-     padding: var(--gap);
-     display: grid;
-     grid-template-columns: repeat(var(--num-cols), 1fr);
-     grid-auto-rows: var(--row-height);
-     gap: var(--gap);
-     box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
- }
- 
- .workimages a img {
-     transition: 2s;
-     transition-delay: 0.001s;
-     border-radius: 12px;
- }
- 
- .workimages>a img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
- }
- 
- .workimages a img:hover {
-     transform: scale(1.1);
-     scroll-behavior: smooth;
- }
- /*=============================================================SKILLS PAGE===================================================*/
- 
- .skills {
-     padding: 3rem 0 5rem;
-     row-gap: 1rem;
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
- }
- 
- .skills h1 {
-     text-decoration: underline #0377d6;
-     color: #0377d6;
-     font-family: Calibri;
-     font-size: 35px;
-     font-weight: bold;
-     margin-top: 0.3%;
-     display: inherit;
-     justify-content: center;
- }
- 
- .professionalskills {
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-     margin-top: 1em;
- }
- 
- .ptext {
-     width: 43%;
-     margin-left: 5%;
-     font-family: Calibri;
-     line-height: 2;
-     margin-bottom: rem;
- }
- 
- .ptext h2 {
-     font-size: 30px;
-     color: #4a4e4f;
- }
- 
- .bigbox {
-     margin-top: 1.3em;
- }
- 
- .box {
-     background-color: #fffffd;
-     margin-top: 1.3em;
-     width: 32em;
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     justify-content: center;
-     box-shadow: 1px -4px 7px 0;
- }
- 
- .box h2 {
-     display: flex;
-     width: 88%;
-     justify-content: space-between;
-     padding: 0.2em;
- }
- 
- .box i {
-     font-size: 1.7em;
-     color: #0377d6;
- }
- 
- .box h2 {
-     font-size: 21px;
- }
- 
- .box progress {
-     width: 100%;
-     height: 10px;
- }
- 
- .skillimage {
-     margin-top: 12em;
-     margin-left: 1.5em;
- }
- 
- .skillimage img {
-     border-radius: 1rem;
-     height: 25rem;
- }
- /*================================================================CONTACT PAGE====================================================*/
- 
- .contact {
-     padding: 3rem 0 0rem 0em;
-     row-gap: 2rem;
- }
- 
- .contact h1 {
-     text-decoration: underline #0377d6;
-     color: #0377d6;
-     font-family: Calibri;
-     font-size: 35px;
-     font-weight: bold;
-     text-align: center;
- }
- 
- .form {
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
-     align-content: center;
-     margin-top: 1.7%;
- }
- 
- .form input {
-     width: 700px;
-     padding: 15px;
-     margin-top: 1.7%;
-     border: 2.25px solid black;
-     border-radius: 8px;
- }
- 
- .form textarea {
-     height: 15em;
-     margin-top: 2%;
-     border-radius: 7px;
-     border: 2.25px solid black;
- }
- 
- .form button {
-     margin-top: 3%;
-     width: 8rem;
-     padding: 10px;
-     border-radius: 7px;
-     color: white;
-     background-color: #0377d6;
-     border: 0px solid #2a3d70;
-     font-weight: bold;
-     align-self: flex-end;
-     cursor: pointer;
- }
- /*==============================================================FOOTER====================================================*/
- 
- .footer {
-     margin-top: 7em;
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     border: 0.5px solid #2b3e70;
-     height: 10em;
-     background-color: #0c2430;
-     color: white;
- }
- 
- .footer h1 {
-     margin-top: 1%;
-     text-align: center;
-     font-family: Calibri;
- }
- 
- .socialmedia {
-     display: flex;
-     justify-content: center;
-     margin-top: 2rem;
-     gap: 5em;
- }
- 
- .socialmedia i {
-     color: white;
- }
- 
- .footer h3 {
-     margin-top: 1%;
-     text-align: center;
-     font-family: Calibri;
-     color: white;
- }
- /*=======================================================MEDIAQUERIES==========================================================*/
- 
- @media only screen and (max-width: 480px) and (min-width: 320px) {
-     html,
-     body {
-         width: 140%;
-         margin: 0;
-         padding: 0;
-         overflow-x: hidden;
-     }
-     a:hover,
-     a.active {
-         background: none;
-         color: white;
-     }
-     nav {
-         width: 100%;
-     }
-     .skillheader {
-         margin-right: 2em;
-         justify-content: center;
-     }
-     .ptext {
-         text-align: center;
-         font-size: 1.5em;
-         width: 650px;
-     }
-     .box {
-         width: 645px;
-     }
-     .img {
-         width: 675px;
-     }
-     .form {
-         margin-top: 2.5em;
-         text-align: center;
-     }
-     .about {
-         display: flex;
-         flex-direction: column;
-         align-content: center;
-         margin-top: 2em;
-     }
-     .aboutsubtitle {
-         margin-top: 1em;
-         text-align: center;
-     }
-     .abouttext {
-         width: 670px;
-         margin-top: 1em;
-         margin-left: 0.5em;
-     }
-     .about p {
-         font-size: 24px;
-         text-align: justify;
-     }
-     .workimages {
-         cursor: pointer;
-         margin-top: 1.5em;
-         --gap: 22px;
-         --num-cols: 2;
-         --row-height: 250px;
-         box-sizing: border-box;
-         padding: var(--gap);
-         display: grid;
-         grid-template-columns: repeat(var(--num-cols), 1fr);
-         grid-auto-rows: var(--row-height);
-         gap: var(--gap);
-         box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
-     }
-     .professionalskills {
-         display: flex;
-         margin-top: 1em;
-         flex-direction: column;
-     }
-     .ptext {
-         margin-left: 5%;
-         font-family: Calibri;
-         line-height: 2;
-         margin-bottom: rem;
-     }
-     .ptext h2 {
-         font-size: 35px;
-         color: #4a4e4f;
-     }
-     .ptext p {
-         font-size: 28px;
-         color: #4a4e4f;
-     }
-     .box {
-         background-color: #fffffd;
-         margin-top: 1.3em;
-         display: flex;
-         align-items: center;
-         flex-wrap: wrap;
-         justify-content: center;
-         box-shadow: 1px -4px 7px 0;
-     }
-     .box h2 {
-         font-size: 21px;
-     }
-     .form input {
-         width: 600px;
-         padding: 15px;
-         margin-top: 1.7%;
-         border: 2.25px solid black;
-         border-radius: 8px;
-     }
-     .socialmedia {
-         display: flex;
-         justify-content: center;
-         margin-top: 2rem;
-         margin: 0% 3% 0% 3%;
-     }
- }
- 
- @media only screen and (max-width: 768px) and (min-width: 481px) {
-     html,
-     body {
-         width: 100%;
-         margin: 0;
-         padding: 0;
-         overflow-x: hidden;
-     }
-     a:hover,
-     a.active {
-         background: none;
-         color: white;
-     }
-     .about {
-         display: flex;
-         flex-direction: column;
-         align-content: center;
-         margin-top: 2em
-     }
-     .aboutsubtitle {
-         margin-top: 1em;
-         text-align: center;
-         font-size: 30px;
-     }
-     .abouttext {
-         width: 675px;
-         margin-top: 1em;
-         margin-left: 0.5em;
-     }
-     .about p {
-         font-size: 28px;
-         text-align: justify;
-     }
-     .skillheader {
-         justify-content: center;
-     }
-     .professionalskills {
-         display: flex;
-         margin-top: 1em;
-         flex-direction: column;
-     }
-     .ptext {
-         text-align: center;
-         font-size: 1.5em;
-         width: 650px;
-     }
-     .ptext p {
-         font-size: 28px;
-         color: #4a4e4f;
-     }
-     .box {
-         width: 645px;
-     }
-     .box h2 {
-         font-size: 24px;
-     }
-     .img {
-         width: 675px;
-     }
-     .form input {
-         width: 600px;
-         padding: 15px;
-         margin-top: 1.7%;
-         border: 2.25px solid black;
-         border-radius: 8px;
-     }
-     .socialmedia {
-         display: flex;
-         justify-content: center;
-         margin-top: 2rem;
-         margin: 0% 3% 0% 3%;
-     }
- }
- 
- @media only screen and (max-width: 1024px) and (min-width: 769px) {
-     html,
-     body {
-         width: 100%;
-         margin: 0;
-         padding: 0;
-         overflow-x: hidden;
-     }
-     label.logo {
-         font-size: 30px;
-         padding-left: 50px;
-         font-family: 'Inconsolata', monospace;
-     }
-     nav ul li a {
-         font-size: 16px;
-     }
-     .about {
-         display: flex;
-         flex-direction: column;
-         align-content: center;
-         margin-top: 2em
-     }
-     .aboutsubtitle {
-         margin-top: 1em;
-         text-align: center;
-     }
-     .abouttext {
-         /* width: 800px; */
-         margin-top: 1em;
-         margin-left: 1em;
-         text-align: justify;
-         font-size: 29px;
-     }
-     .skillheader {
-         margin-right: 1.2em;
-         justify-content: center;
-     }
-     .professionalskills {
-         display: flex;
-         margin-top: 1em;
-         flex-direction: column;
-     }
-     .ptext {
-         text-align: center;
-         font-size: 1.5em;
-         width: 90%;
-     }
-     .box {
-         width: 900px;
-     }
-     .img {
-         width: 90%;
-     }
-     .form input {
-         width: 700px;
-         padding: 15px;
-         margin-top: 1.7%;
-         border: 2.25px solid black;
-         border-radius: 8px;
-     }
-     .socialmedia {
-         display: flex;
-         justify-content: center;
-         margin-top: 2rem;
-         margin: 0% 3% 0% 3%;
-     }
- }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  }
+  /*=======================================================GOOGLE FONTS==========================================================*/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto+Mono:wght@100&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
+  /*===================================================NAVIGATION BAR==============================================*/
+  
+  nav {
+      height: 56px;
+      width: 100%;
+      align-items: center;
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 5;
+      border-bottom: 1px solid #e6e6e6;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  label.logo {
+      font-size: 20px;
+      padding: 0px 35px;
+      font-weight: bold;
+      line-height: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  nav ul li a {
+      color: black;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-decoration: none;
+  }
+  
+  nav a.active,
+  nav a:hover {
+      background: white;
+      transition: .5s;
+      color: black;
+      text-decoration: underline #3a5292;
+      text-decoration-thickness: 2.5px;
+  }
+  
+  .checkbtn {
+      font-size: 30px;
+      color: black;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+  }
+  
+  #check {
+      display: none;
+  }
+  /*============================================================ HOME PAGE==============================================*/
+  
+  .home {
+      font-size: 4.1em;
+      margin-left: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      font-family: 'Mukta', sans-serif;
+      justify-content: space-between;
+      margin-right: 10%;
+      height: 100%;
+      position: relative;
+      padding: 6rem 0 5rem;
+      row-gap: 2rem;
+      width: 100%;
+      line-height: 1.5;
+  }
+  
+  .home .avartar {
+      height: 7.5em;
+      margin-right: 8%;
+  }
+  
+  .home span {
+      color: #0377d6;
+  }
+  
+  .home button {
+      margin-top: 3rem;
+      width: 11em;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      background-color: #0377d6;
+      border: 0px solid #2a3d70;
+      color: white;
+      cursor: pointer;
+      font-size: 17px;
+  }
+  
+  .socials {
+      display: flex;
+      margin-left: 5%;
+      width: 120px;
+      justify-content: space-between;
+  }
+  
+  .socials i {
+      color: black;
+  }
+  /*=========================================================ABOUT PAGE==================================================*/
+  
+  #about {
+      padding: 4rem 0 4rem;
+      row-gap: 1rem;
+  }
+  
+  .about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  #about h1 {
+      font-family: Calibri;
+      font-weight: bold;
+      text-align: center;
+      color: #0377d6;
+      margin-top: 5%;
+      font-size: 35px;
+      text-decoration: underline #0377d6;
+  }
+  
+  #about p {
+      font-size: 20px;
+  }
+  
+  .imagecontainer img {
+      height: 30em;
+      border-radius: 10px;
+      box-shadow: 0.05em 0em 0.5em 0.05em;
+  }
+  
+  .textcontainer {
+      line-height: 1.88;
+      font-size: 1em;
+      color: #4a4e4f;
+      width: 700px
+  }
+  /*===============================================================WORK PAGE====================================================*/
+  
+  .work {
+      padding: 6rem 0 5rem;
+      row-gap: 2rem;
+  }
+  
+  .work h1 {
+      text-decoration: underline #0377d6;
+      color: #0377d6;
+      font-family: Calibri;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .workimages {
+      cursor: pointer;
+      margin-top: 1.5em;
+      --gap: 22px;
+      --num-cols: 3;
+      --row-height: 250px;
+      box-sizing: border-box;
+      padding: var(--gap);
+      display: grid;
+      grid-template-columns: repeat(var(--num-cols), 1fr);
+      grid-auto-rows: var(--row-height);
+      gap: var(--gap);
+      box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
+  }
+  
+  .workimages a img {
+      transition: 2s;
+      transition-delay: 0.001s;
+      border-radius: 12px;
+  }
+  
+  .workimages>a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  .workimages a img:hover {
+      transform: scale(1.1);
+      scroll-behavior: smooth;
+  }
+  /*=============================================================SKILLS PAGE===================================================*/
+  
+  .skills {
+      padding: 3rem 0 5rem;
+      row-gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  
+  .skills h1 {
+      text-decoration: underline #0377d6;
+      color: #0377d6;
+      font-family: Calibri;
+      font-size: 35px;
+      font-weight: bold;
+      margin-top: 0.3%;
+      display: inherit;
+      justify-content: center;
+  }
+  
+  .professionalskills {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 1em;
+  }
+  
+  .ptext {
+      width: 43%;
+      margin-left: 5%;
+      font-family: Calibri;
+      line-height: 2;
+      margin-bottom: rem;
+  }
+  
+  .ptext h2 {
+      font-size: 30px;
+      color: #4a4e4f;
+  }
+  
+  .ptext p {
+      font-size: 19px;
+  }
+  
+  .bigbox {
+      margin-top: 1.3em;
+  }
+  
+  .box {
+      background-color: #fffffd;
+      margin-top: 1.3em;
+      width: 32em;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 1px -4px 7px 0;
+  }
+  
+  .box h2 {
+      display: flex;
+      width: 88%;
+      justify-content: space-between;
+      padding: 0.2em;
+  }
+  
+  .box i {
+      font-size: 1.7em;
+      color: #0377d6;
+  }
+  
+  .box h2 {
+      font-size: 21px;
+  }
+  
+  .box progress {
+      width: 100%;
+      height: 10px;
+  }
+  
+  .skillimage {
+      margin-top: 10em;
+      margin-left: 1.5em;
+  }
+  
+  .skillimage img {
+      border-radius: 1rem;
+      height: 25rem;
+  }
+  /*================================================================CONTACT PAGE====================================================*/
+  
+  .contact {
+      padding: 3rem 0 0rem 0em;
+      row-gap: 2rem;
+  }
+  
+  .contact h1 {
+      text-decoration: underline #0377d6;
+      color: #0377d6;
+      font-family: Calibri;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      margin-top: 1.7%;
+  }
+  
+  .form input {
+      width: 700px;
+      padding: 15px;
+      margin-top: 1.7%;
+      border: 2.25px solid black;
+      border-radius: 8px;
+  }
+  
+  .form textarea {
+      height: 15em;
+      margin-top: 2%;
+      border-radius: 7px;
+      border: 2.25px solid black;
+  }
+  
+  .form button {
+      margin-top: 3%;
+      width: 11rem;
+      padding: 10px;
+      border-radius: 7px;
+      color: white;
+      background-color: #0377d6;
+      border: 0px solid #2a3d70;
+      font-weight: bold;
+      align-self: flex-end;
+      cursor: pointer;
+      font-size: 17px;
+  }
+  /*==============================================================FOOTER====================================================*/
+  
+  .footer {
+      margin-top: 7em;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      border: 0.5px solid #2b3e70;
+      height: 10em;
+      background-color: #0c2430;
+      color: white;
+  }
+  
+  .footer h1 {
+      margin-top: 1%;
+      text-align: center;
+      font-family: Calibri;
+  }
+  
+  .socialmedia {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 5em;
+  }
+  
+  .socialmedia i {
+      color: white;
+  }
+  
+  .footer h3 {
+      margin-top: 1%;
+      text-align: center;
+      font-family: Calibri;
+      color: white;
+  }
+  /*=======================================================MEDIAQUERIES==========================================================*/
+  
+  @media only screen and (max-width: 480px) and (min-width: 320px) {
+      html,
+      body {
+          width: 138%;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+      }
+      a:hover,
+      a.active {
+          background: none;
+          color: white;
+      }
+      nav {
+          width: 100%;
+      }
+      .home .avartar {
+          height: 8em;
+          margin-left: 7%;
+      }
+      .home button {
+          margin-top: 3rem;
+          width: 11em;
+          padding: 13px;
+          font-size: 24px;
+          border-radius: 10px;
+      }
+      .imagecontainer img {
+          height: 35em;
+      }
+      .skillheader {
+          margin-right: 2em;
+          justify-content: center;
+      }
+      .ptext {
+          text-align: center;
+          font-size: 1.5em;
+          width: 650px;
+      }
+      .box {
+          width: 645px;
+      }
+      .img {
+          width: 675px;
+      }
+      .form {
+          margin-top: 2.5em;
+          text-align: center;
+      }
+      .about {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin-top: 2em;
+      }
+      .aboutsubtitle {
+          margin-top: 1em;
+          text-align: center;
+          font-size: 28px;
+      }
+      .abouttext {
+          width: 670px;
+          margin-top: 1em;
+          margin-left: 0.5em;
+      }
+      #about p {
+          font-size: 28.5px;
+          text-align: justify;
+      }
+      .workimages {
+          cursor: pointer;
+          margin-top: 1.5em;
+          --gap: 22px;
+          --num-cols: 2;
+          --row-height: 250px;
+          box-sizing: border-box;
+          padding: var(--gap);
+          display: grid;
+          grid-template-columns: repeat(var(--num-cols), 1fr);
+          grid-auto-rows: var(--row-height);
+          gap: var(--gap);
+          box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
+      }
+      .professionalskills {
+          display: flex;
+          margin-top: 1em;
+          flex-direction: column;
+      }
+      .ptext {
+          margin-left: 5%;
+          font-family: Calibri;
+          line-height: 2;
+          margin-bottom: rem;
+      }
+      .ptext h2 {
+          font-size: 37px;
+          color: #4a4e4f;
+          margin-right: 5%;
+      }
+      .ptext p {
+          font-size: 33px;
+          color: #4a4e4f;
+      }
+      .box {
+          background-color: #fffffd;
+          margin-top: 1.3em;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          box-shadow: 1px -4px 7px 0;
+      }
+      .box h2 {
+          font-size: 21px;
+      }
+      .form input {
+          width: 600px;
+          padding: 15px;
+          margin-top: 1.7%;
+          border: 2.25px solid black;
+          border-radius: 8px;
+      }
+      .socialmedia {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          width: 120px;
+      }
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+      html,
+      body {
+          width: 101%;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+      }
+      a:hover,
+      a.active {
+          background: none;
+          color: white;
+      }
+      .home button {
+          margin-top: 3rem;
+          width: 11em;
+          padding: 13px;
+          font-size: 24px;
+          border-radius: 10px;
+      }
+      .imagecontainer img {
+          height: 45em;
+      }
+      .about {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin-top: 2em
+      }
+      .aboutsubtitle {
+          margin-top: 1em;
+          text-align: center;
+          font-size: 42px;
+      }
+      .abouttext {
+          width: 675px;
+          margin-top: 1em;
+          margin-left: 0.5em;
+      }
+      #about p {
+          font-size: 34.4px;
+          text-align: justify;
+      }
+      .workimages {
+          cursor: pointer;
+          margin-top: 1.5em;
+          --gap: 22px;
+          --num-cols: 2;
+          --row-height: 250px;
+          box-sizing: border-box;
+          padding: var(--gap);
+          display: grid;
+          grid-template-columns: repeat(var(--num-cols), 1fr);
+          grid-auto-rows: var(--row-height);
+          gap: var(--gap);
+          box-shadow: 0px, 4px, 25px rgba(14, 36, 49, 0.15);
+      }
+      .skillheader {
+          justify-content: center;
+      }
+      .professionalskills {
+          display: flex;
+          margin-top: 1em;
+          flex-direction: column;
+      }
+      .ptext {
+          text-align: center;
+          font-size: 1.5em;
+          width: 650px;
+      }
+      .ptext h2 {
+          font-size: 44px;
+          color: #4a4e4f;
+      }
+      .ptext p {
+          font-size: 33px;
+          color: #4a4e4f;
+      }
+      .box {
+          width: 645px;
+      }
+      .box h2 {
+          font-size: 24px;
+      }
+      .img {
+          width: 675px;
+      }
+      .form input {
+          width: 600px;
+          padding: 15px;
+          margin-top: 1.7%;
+          border: 2.25px solid black;
+          border-radius: 8px;
+      }
+      .socialmedia {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          width: 120px;
+      }
+  }
+  
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+      html,
+      body {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+      }
+      label.logo {
+          font-size: 30px;
+          padding-left: 50px;
+          font-family: 'Inconsolata', monospace;
+      }
+      nav ul li a {
+          font-size: 16px;
+      }
+      .about {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          margin-top: 2em
+      }
+      .aboutsubtitle {
+          margin-top: 1em;
+          text-align: center;
+          font-size: 38px;
+      }
+      #about p {
+          font-size: 34px;
+          text-align: justify;
+      }
+      .abouttext {
+          /* width: 800px; */
+          margin-top: 1em;
+          margin-left: 1em;
+          text-align: justify;
+          font-size: 29px;
+      }
+      .skillheader {
+          margin-right: 1.2em;
+          justify-content: center;
+      }
+      .professionalskills {
+          display: flex;
+          margin-top: 1em;
+          flex-direction: column;
+      }
+      .ptext {
+          text-align: center;
+          font-size: 1.5em;
+          width: 90%;
+      }
+      .ptext h2 {
+          font-size: 50px;
+          color: #4a4e4f;
+      }
+      .ptext p {
+          font-size: 38px;
+          color: #4a4e4f;
+      }
+      .box {
+          width: 900px;
+      }
+      .img {
+          width: 90%;
+      }
+      .form input {
+          width: 700px;
+          padding: 15px;
+          margin-top: 1.7%;
+          border: 2.25px solid black;
+          border-radius: 8px;
+      }
+      .socialmedia {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+          width: 120px;
+      }
+      .home {
+          font-size: 5.8em;
+      }
+      .home button {
+          margin-top: 3rem;
+          width: 11em;
+          padding: 13px;
+          font-size: 24px;
+      }
+      .imagecontainer img {
+          height: 35em;
+          border-radius: 10px;
+          box-shadow: 0.05em 0em 0.5em 0.05em;
+      }
+  }
