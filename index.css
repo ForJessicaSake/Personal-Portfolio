@@ -7,6 +7,10 @@
   html {
       scroll-behavior: smooth;
   }
+  
+  body {
+      scroll-behavior: smooth;
+  }
   /*=======================================================GOOGLE FONTS==========================================================*/
   
   @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto+Mono:wght@100&family=Secular+One&family=Space+Mono:wght@400;700&display=swap');
