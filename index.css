@@ -508,6 +508,9 @@
           justify-content: center;
           box-shadow: 1px -4px 7px 0;
       }
+      .box i {
+          font-size: 23px;
+      }
       .box h2 {
           font-size: 21px;
       }
@@ -612,6 +615,9 @@
       .box h2 {
           font-size: 24px;
       }
+      .box i {
+          font-size: 27px;
+      }
       .img {
           width: 675px;
       }
@@ -694,6 +700,9 @@
       }
       .box {
           width: 900px;
+      }
+      .box i {
+          font-size: 38px;
       }
       .img {
           width: 90%;
