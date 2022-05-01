@@ -381,11 +381,6 @@
       display: flex;
       justify-content: center;
       margin-top: 2rem;
-      gap: 5em;
-  }
-  
-  .socialmedia i {
-      color: white;
   }
   
   .footer h3 {
@@ -393,6 +388,12 @@
       text-align: center;
       font-family: Calibri;
       color: white;
+  }
+  
+  .socialmedia i {
+      width: 45px;
+      color: white;
+      padding-left: 20%;
   }
   /*=======================================================MEDIAQUERIES==========================================================*/
   
@@ -526,9 +527,6 @@
           justify-content: center;
           margin-top: 2rem;
       }
-      .socialmedia i {
-          width: 30;
-      }
   }
   
   @media only screen and (max-width: 768px) and (min-width: 481px) {
@@ -632,9 +630,6 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
-      }
-      .socialmedia i {
-          width: 30px;
       }
   }
   
