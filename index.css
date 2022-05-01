@@ -526,10 +526,10 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
-          margin-bottom: 2rem;
+
       }
       .socialmedia i{
-          font-size: 28px;
+          font-size: 25px;
       }
   }
   
@@ -634,11 +634,11 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
-          margin-bottom:2rem;
+
       }
 
       .socialmedia i{
-          font-size: 32px;
+          font-size: 27px;
       }
 
   }
