@@ -522,7 +522,9 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
-          width: 120px;
+      }
+      .socialmedia i {
+          width: 20px;
       }
   }
   
@@ -624,7 +626,9 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
-          width: 120px;
+      }
+      .socialmedia i {
+          width: 20px;
       }
   }
   
@@ -705,7 +709,9 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
-          width: 120px;
+      }
+      .socialmedia i {
+          width: 20px;
       }
       .home {
           font-size: 5.8em;
