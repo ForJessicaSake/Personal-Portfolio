@@ -399,7 +399,7 @@
   @media only screen and (max-width: 480px) and (min-width: 320px) {
       html,
       body {
-          width: 138%;
+          width: 140%;
           margin: 0;
           padding: 0;
           overflow-x: hidden;
@@ -524,7 +524,7 @@
           margin-top: 2rem;
       }
       .socialmedia i {
-          width: 20px;
+          width: 30;
       }
   }
   
@@ -628,7 +628,7 @@
           margin-top: 2rem;
       }
       .socialmedia i {
-          width: 20px;
+          width: 30px;
       }
   }
   
@@ -711,7 +711,7 @@
           margin-top: 2rem;
       }
       .socialmedia i {
-          width: 20px;
+          width: 30px;
       }
       .home {
           font-size: 5.8em;
