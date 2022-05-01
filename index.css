@@ -527,6 +527,9 @@
           justify-content: center;
           margin-top: 2rem;
       }
+      .socialmedia i{
+          font-size: 20px;
+      }
   }
   
   @media only screen and (max-width: 768px) and (min-width: 481px) {
