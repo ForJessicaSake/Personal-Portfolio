@@ -526,6 +526,7 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
+          margin-bottom: 2rem;
       }
       .socialmedia i{
           font-size: 28px;
@@ -633,7 +634,13 @@
           display: flex;
           justify-content: center;
           margin-top: 2rem;
+          margin-bottom:2rem;
       }
+
+      .socialmedia i{
+          font-size: 32px;
+      }
+
   }
   
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
