@@ -336,6 +336,7 @@
   }
   
   .form button {
+      margin-top: 3%;
       width: 11rem;
       padding: 10px;
       border-radius: 7px;
@@ -343,14 +344,14 @@
       background-color: #0377d6;
       border: 0px solid #2a3d70;
       font-weight: bold;
+      align-self: flex-end;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 17px;
   }
   
   .form a {
-      align-self: flex-end;
-      cursor: pointer;
-      margin-top: 3%;
+      text-decoration: none;
+      color: white;
   }
   /*==============================================================FOOTER====================================================*/
   
